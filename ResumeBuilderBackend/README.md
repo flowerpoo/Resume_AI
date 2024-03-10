@@ -228,7 +228,7 @@ libxi6 libxrandr2 libxrender1 libxss1 libxtst6 lsb-release wget xdg-utils
   tsc
 ```
 - Create a .env file with following fields
-```bash
+```bash   
 JWT_SECRET_KEY="MYREALLYSECRETKEY"
 MONGO_URL="mongodb://MONGO_URL"
 OPENAI_KEY="OPENAI_API_KEY"
