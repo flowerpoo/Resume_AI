@@ -12,3 +12,7 @@ FROM nginx:alpine
 COPY --from=build /app/dist/resumebuilder /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx","-g","deamon off;"]
+
+# EXPOSE 4200
+# CMD [ "nohup","npm","start" ]
+
