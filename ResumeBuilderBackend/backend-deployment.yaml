@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: resume-builder-be-k8s
-        #image: flowerking21/resume_be:v1.1
-        image: ${env.DOCKER_IMAGE_RESUME_BUILDER_BACKEND}:${env.BUILD_ID}
+        image: flowerking21/resume_be:latest
+        #image: ${env.DOCKER_IMAGE_RESUME_BUILDER_BACKEND}:${env.BUILD_ID}
         resources:
           limits:
             memory: "512Mi"
