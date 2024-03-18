@@ -15,11 +15,11 @@ spec:
     spec:
       containers:
       - name: resume-builder-fe-k8s
-        image: flowerking21/resume_fe:9
+        image: flowerking21/resume_fe:latest
         #image: ${env.DOCKER_IMAGE_RESUME_BUILDER_FRONTEND}:${env.BUILD_ID}
         resources:
           limits:
             memory: "512Mi"
             cpu: "500m"
         ports:
-        - containerPort: 80
+        - containerPort: 4200

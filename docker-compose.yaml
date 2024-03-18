@@ -3,10 +3,11 @@ services:
   frontend:
     build: ./ResumeBuilderAngular
     ports:
-      - "80:80"
+      - "4200:4200"
     depends_on:
       - backend
   backend:
     build: ./ResumeBuilderBackend
     ports:
       - "4292:4292"
+  
