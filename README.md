@@ -107,42 +107,42 @@ docker push aws_account_id.dkr.ecr.region.amazonaws.com/my-repository:tag
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 ```
-![alt text](images/image2.png)
+![alt text](images/image2.PNG)
 
 ```
 # get number of deployments 
 kubectl get deployments
 ```
-![alt text](images/image3.png)
+![alt text](images/image3.PNG)
 
 ```
 # get number of pods that are running 
 kubectl get pods
 ```
-![alt text](images/image4.png)
+![alt text](images/image4.PNG)
 
 ```
 # get service details
 kubectl get svc
 ```
-![alt text](images/image5.png)
+![alt text](images/image5.PNG)
 
 To view the Minikube deployment dashboard, use the following command:
 ```
 minikube dashboard
 ```
 The code displays the following in your web browser:
-![alt text](images/image6.png)
+![alt text](images/image6.PNG)
 
 To expose the service, use the following `minikube` command:
 ```
 minikube service resumebuilderbackend-evc
 ```
 
-![alt text](images/image7.png)
+![alt text](images/image7.PNG)
 
 open the url in browser to see the result
 
-![alt text](images/image7.png)
+![alt text](images/image7.PNG)
 
 ######## well done backend deployment was done using kubernetes #########
