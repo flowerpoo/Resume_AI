@@ -26,7 +26,7 @@ pipeline {
             steps{
                 script {
                     def envContent = """
-                        MONGO_URL='mongodb+srv://group4:group4@cluster0.wbha2pq.mongodb.net/resume-builder'
+                        MONGO_URL='mongodb+srv://**************/resume_builder'
                         JWT_SECRET_KEY="MYREALLYSECRETKEY"
                         OPENAI_KEY="OPENAI_API_KEY"
                         GMAIL_USER="THIS EMAIL IS USED TO SEND RESUMES"
