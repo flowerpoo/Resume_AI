@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: resumebuilderbackend
+  name: backend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: resumebuilderbackend
+      app: backend
   template:
     metadata:
       labels:
-        app: resumebuilderbackend
+        app: backend
     spec:
       containers:
       - name: resume-builder-be-k8s

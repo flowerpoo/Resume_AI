@@ -2,24 +2,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: resumebuilderfrontend
+  name: frontend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: resumebuilderfrontend
+      app: frontend
   template:
     metadata:
       labels:
-        app: resumebuilderfrontend
+        app: frontend
     spec:
       containers:
       - name: resume-builder-fe-k8s
-        image: flowerking21/resume_fe:latest
-        #image: ${env.DOCKER_IMAGE_RESUME_BUILDER_FRONTEND}:${env.BUILD_ID}
+        image: flowerking21/resume_fe:11
         resources:
           limits:
             memory: "512Mi"
             cpu: "500m"
         ports:
         - containerPort: 4200
+        

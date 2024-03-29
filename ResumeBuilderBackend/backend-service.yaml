@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: resumebuilderbackend-svc
+  name: backend
 spec:
   type: LoadBalancer
   selector:
-    app: resumebuilderbackend
+    app: backend
   ports:
   - port: 4292
     targetPort: 4292
